@@ -37,9 +37,14 @@ Basically: \
 ### 1.B
 **Batch Solution:** A batch solution means when we construct the entire graph and solve it at the end altogether. We first load _data/input_INTEL_g2o.g2o_ and construct a 2D nonlinear factor graph using GTSAM, using the Gauss-Newton solver.
 
+
+<img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/1.B.png" width="600" height="500">
+
+
 ### 1.C
 **Incremental Solution:** Here, we use ISAM2 solver to optimize the trajectory incrementally i.e. as we build the graph gradually.
 
+<img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/1.C.png" width="600" height="500">
 
 ## 3D Graph SLAM
 
@@ -47,9 +52,17 @@ Basically: \
  Here we first develop a function to read 3D Garage G2O file from G2O format and output poses and edges. 
  Basically: \
  <img width="851" alt="image" src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/assets/86003669/76f681e7-70fb-4132-88f1-398d00579a29">
-
+ 
 ### 2.B
 **Batch Solution:** We first load data/parking-garage.g2o and then construct a 3D nonlinear factor graph using GTSAM. Use the Gauss-Newton solver.
 
+View 1           |  View 2        |  View 3    
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/2.B%20(View%201).png" width="600" height="500"> | <img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/2.B%20(View%202).png" width="600" height="500"> | <img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/2.B%20(View%203).png" width="600" height="500">
+
 ### 2.C
 **Incremental Solution:** We Use ISAM2 solver to optimize the trajectory incrementally, then we visualize and compare the optimized trajectory against the initial trajectory.
+
+View 1           |  View 2        |  View 3    
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/2.C%20(View%201).png" width="600" height="500"> | <img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/2.C%20(View%202).png" width="600" height="500"> | <img src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/2.C%20(View%203).png" width="600" height="500">
