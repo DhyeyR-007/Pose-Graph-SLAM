@@ -31,7 +31,7 @@ EDGE_SE2 i j x y theta info(x, y, theta)
 Where z_ij = (x, y, theta)^T is the measurement moving from x_i to x_j, i.e. x_j = x_i \oplus z_ij
 
 Basically: \
-<img width="851" alt="image" src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/assets/86003669/f3c5d466-5a76-49fa-b5f3-e868ae5bc223">
+<img width="851" alt="image" src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/2A_instructions_typed.png">
 
 
 ### 1.B
@@ -51,7 +51,7 @@ Basically: \
 ### 2.A
  Here we first develop a function to read 3D Garage G2O file from G2O format and output poses and edges. 
  Basically: \
- <img width="851" alt="image" src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/assets/86003669/76f681e7-70fb-4132-88f1-398d00579a29">
+ <img width="851" alt="image" src="https://github.com/DhyeyR-007/Pose-Graph-SLAM/blob/main/Figures/3A_instructions_typed.png">
  
 ### 2.B
 **Batch Solution:** We first load data/parking-garage.g2o and then construct a 3D nonlinear factor graph using GTSAM. Use the Gauss-Newton solver.
